@@ -18,7 +18,7 @@ export class AuthController {
             const dto = await validateDto(SignupDto, req.body);
             const user = await this.authService.signup(dto.username, dto.email, dto.password, dto.roleId, dto.companyId);
             res.status(201).send(
-                new ApiResponse(201, user, 'User created successfully'));
+                new ApiResponse(201, user, 'User created successfully.'));
         } catch (error) {
             console.log("Signup error:", error);
             if (error instanceof ApiException) next(error);
