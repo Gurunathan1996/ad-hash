@@ -110,6 +110,10 @@ shipment-tracking-system/
    ```
    npm install
    ```
+4. Install dependencies:
+   ```
+   npm run dev:nodemon (Run locally)
+   ```
 
 ## Configuration
 1. Create a `.env` file in the root directory based on `.env.example`:
